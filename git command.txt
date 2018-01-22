@@ -1,0 +1,8 @@
+git init
+git config --global user.name 
+git config --global user.email
+git add index.html
+git status -sb
+git add . (add all)
+git commit -m "message"
+.gitignore

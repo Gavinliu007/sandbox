@@ -3,10 +3,10 @@ CREATE OR REPLACE FUNCTION "AMANDA"."BUILDING_OWNER_ADDLINE1" (parmFolderRSN num
 
 vl_addressline1 varchar2(60);
 
+/* Task 333 */
 
-
-v_NAME                 VARCHAR2(50) := null;
-v_ORGANIZATIONNAME      VARCHAR2(50) := null;
+v_NAME                 VARCHAR2(250) := null;
+v_ORGANIZATIONNAME      VARCHAR2(250) := null;
 
 begin
 

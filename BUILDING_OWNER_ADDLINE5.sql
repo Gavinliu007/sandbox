@@ -1,6 +1,7 @@
 CREATE OR REPLACE FUNCTION        AMANDA.BUILDING_OWNER_ADDLINE5 (parmFolderRSN number)
    return varchar2  is
-/* Version 1.1 change to larger varchar2 */
+/* Version 1.1 change to larger varchar2 
+Quick fix on master */
 vl_addressline5 varchar2(800);
 v_ADDRHOUSE            amanda.people.addrhouse%type := null;
 v_ADDRSTREET            amanda.people.addrstreet%type := null;

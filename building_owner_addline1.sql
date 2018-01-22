@@ -34,4 +34,8 @@ end if;
 
 return vl_addressline1;
 
+     exception
+	       WHEN others THEN
+           return null;
+           
 end building_owner_addline1;

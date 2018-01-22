@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION        AMANDA.BUILDING_OWNER_ADDLINE5 (parmFolderRSN number)
    return varchar2  is
-
-vl_addressline5 varchar2(600);
+/* Version 1.1 change to larger varchar2 */
+vl_addressline5 varchar2(800);
 v_ADDRHOUSE            amanda.people.addrhouse%type := null;
 v_ADDRSTREET            amanda.people.addrstreet%type := null;
 v_ADDRUNITTYPE          amanda.people.addrunittype%type := null;
@@ -10,8 +10,8 @@ v_ADDRCITY              amanda.people.addrcity%type := null;
 v_ADDRPROVINCE          amanda.people.addrprovince%type := null;
 v_ADDRPOSTAL            amanda.people.addrpostal%type := null;
 
-v_ADDRESSLINE1   VARCHAR2(600);
-v_ADDRESSLINE2   VARCHAR2(600);
+v_ADDRESSLINE1   VARCHAR2(800);
+v_ADDRESSLINE2   VARCHAR2(800);
 
 
 begin

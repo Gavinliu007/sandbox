@@ -48,4 +48,4 @@ end if;
 return vl_addressline3;
 
 end building_owner_addline3;
-  GRANT EXECUTE ON "AMANDA"."BUILDING_OWNER_ADDLINE3" TO PUBLIC;
+

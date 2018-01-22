@@ -1,7 +1,7 @@
 
 CREATE OR REPLACE FUNCTION        AMANDA.BUILDING_OWNER_ADDLINE4 (parmFolderRSN number)
    return varchar2  is
-
+/* Add on Task1234 */
 vl_addressline4 varchar2(600);
 v_ADDRHOUSE            amanda.people.addrhouse%type := null;
 v_ADDRSTREET            amanda.people.addrstreet%type := null;
@@ -46,4 +46,4 @@ end if;
 return vl_addressline4;
 
 end building_owner_addline4;
-  GRANT EXECUTE ON "AMANDA"."BUILDING_OWNER_ADDLINE4" TO PUBLIC;
+

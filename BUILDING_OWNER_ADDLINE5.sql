@@ -1,5 +1,4 @@
--- Unable to render FUNCTION DDL for object AMANDA.BUILDING_OWNER_ADDLINE5 with DBMS_METADATA attempting internal generator.
-CREATE FUNCTION        AMANDA.BUILDING_OWNER_ADDLINE5 (parmFolderRSN number)
+CREATE OR REPLACE FUNCTION        AMANDA.BUILDING_OWNER_ADDLINE5 (parmFolderRSN number)
    return varchar2  is
 
 vl_addressline5 varchar2(600);

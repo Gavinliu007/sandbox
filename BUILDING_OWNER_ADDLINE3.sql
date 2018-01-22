@@ -1,11 +1,8 @@
 
-CREATE OR REPLACE FUNCTION        AMANDA.BUILDING_OWNER_ADDLINE4 (parmFolderRSN number)
+CREATE OR REPLACE FUNCTION        AMANDA.BUILDING_OWNER_ADDLINE3 (parmFolderRSN number)
    return varchar2  is
-/* Add on Task1234 *
- New change on V1.2 *
- 
- Someone change on master branch */
-vl_addressline4 varchar2(600);
+
+vl_addressline3 varchar2(600);
 v_ADDRHOUSE            amanda.people.addrhouse%type := null;
 v_ADDRSTREET            amanda.people.addrstreet%type := null;
 v_ADDRUNITTYPE          amanda.people.addrunittype%type := null;
@@ -14,8 +11,8 @@ v_ADDRCITY              amanda.people.addrcity%type := null;
 v_ADDRPROVINCE          amanda.people.addrprovince%type := null;
 v_ADDRPOSTAL            amanda.people.addrpostal%type := null;
 
-v_ADDRESSLINE1   VARCHAR2(800);
-v_ADDRESSLINE2   VARCHAR2(800);
+v_ADDRESSLINE1   VARCHAR2(600);
+v_ADDRESSLINE2   VARCHAR2(600);
 
 
 begin
@@ -37,16 +34,18 @@ begin
      exception
            WHEN NO_DATA_FOUND THEN
             v_addrstreet := null;
-            v_addressline2 := null;
+            v_addressline1 := null;
      end;
 
 if v_addrstreet is not null then
-      vl_addressline4 := rtrim(v_addrcity)||' '||rtrim(v_addrprovince);
-   else
-      vl_addressline4 := v_addressline2;
+   vl_addressline3 := v_addrhouse||' '||rtrim(v_addrstreet)||' '
+                      ||rtrim(v_addrunittype)||' '||rtrim(v_addrunit);
+
+else
+   vl_addressline3 := v_addressline1;
 end if;
 
-return vl_addressline4;
+return vl_addressline3;
 
-end building_owner_addline4;
+end building_owner_addline3;
 

@@ -2,8 +2,8 @@
 CREATE OR REPLACE FUNCTION AMANDA.BUILDING_OWNER_ADDLINE2 (parmFolderRSN number)
    return varchar2  is
 
-vl_addressline1 varchar2(60);
-vl_addressline2 varchar2(60);
+vl_addressline1 varchar2(120);
+vl_addressline2 varchar2(1260);
 
 
 

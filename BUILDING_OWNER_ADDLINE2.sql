@@ -2,13 +2,13 @@
 CREATE OR REPLACE FUNCTION AMANDA.BUILDING_OWNER_ADDLINE2 (parmFolderRSN number)
    return varchar2  is
 
-vl_addressline1 varchar2(60);
-vl_addressline2 varchar2(60);
+vl_addressline1 varchar2(80);
+vl_addressline2 varchar2(80);
 
 
 
-v_NAME                 VARCHAR2(50) := null;
-v_ORGANIZATIONNAME      VARCHAR2(50) := null;
+v_NAME                 VARCHAR2(80) := null;
+v_ORGANIZATIONNAME      VARCHAR2(80) := null;
 
 begin
 
@@ -35,6 +35,9 @@ else
    vl_addressline1 := null;
    vl_addressline2 := v_name;
 end if;
+exception
+	       WHEN Others THEN
+            return null;
 
 return vl_addressline2;
 

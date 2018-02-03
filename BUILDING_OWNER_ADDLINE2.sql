@@ -1,10 +1,9 @@
--- Unable to render FUNCTION DDL for object AMANDA.BUILDING_OWNER_ADDLINE2 with DBMS_METADATA attempting internal generator.
 CREATE FUNCTION AMANDA.BUILDING_OWNER_ADDLINE2 (parmFolderRSN number)
    return varchar2  is
 
 vl_addressline1 varchar2(60);
 vl_addressline2 varchar2(60);
-
+--Task 222
 
 
 v_NAME                 VARCHAR2(50) := null;

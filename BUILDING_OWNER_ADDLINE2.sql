@@ -1,10 +1,9 @@
-
-CREATE OR REPLACE FUNCTION AMANDA.BUILDING_OWNER_ADDLINE2 (parmFolderRSN number)
+CREATE FUNCTION AMANDA.BUILDING_OWNER_ADDLINE2 (parmFolderRSN number)
    return varchar2  is
 
 vl_addressline1 varchar2(80);
 vl_addressline2 varchar2(80);
-
+--Task 222
 
 
 v_NAME                 VARCHAR2(80) := null;

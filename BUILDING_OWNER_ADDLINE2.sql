@@ -37,6 +37,9 @@ else
 end if;
 
 return vl_addressline2;
+/* Someone add a logic here
+second line
 
+*/
 end building_owner_addline2;
   GRANT EXECUTE ON "AMANDA"."BUILDING_OWNER_ADDLINE2" TO PUBLIC;
